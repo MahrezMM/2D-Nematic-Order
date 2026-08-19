@@ -125,7 +125,6 @@ def frame_order(box, lo, types, xyz, wrapped):
 
 
 def block_error(x):
-    """Error bar from NBLOCKS block averages (frames are correlated)."""
     x = np.asarray(x, float)
     x = x[~np.isnan(x)]
     if len(x) < NBLOCKS:
